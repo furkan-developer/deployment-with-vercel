@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 1.rem;
+            color: black;
+        }
+        .active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+       <li><a href="index.html" class="active">Home page</a></li>
+       <li><a href="products.html">Products</a></li>
+       <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <h1>Not Found Page</h1>
+    <button>Show</button>
+
+
+    <script>
+        var content = document.body.querySelector('h1');
+        var button = document.body.querySelector('button');
+
+        button.addEventListener("click", ()=>{
+            alert(content.textContent);
+        });
+    </script>
+</body>
+</html>
